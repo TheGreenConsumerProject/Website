@@ -1,0 +1,736 @@
+###Version 1.01 - Clothing page
+
+<style>
+
+.modal {font-family: Glacial Indifference}
+.modal {color: #148735}
+
+img:hover {
+ cursor: pointer;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: inline;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  top: 25px;
+  background-color: #fefefe;
+  padding: 0;
+  margin: auto;
+  border: 1px solid #888;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-1000px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-1000px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: black;
+  color: #148735;
+}
+
+.modal-header h2 {
+  color: white;
+}
+
+.modal-footer h3 {
+  color: #148735;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  color: #148735;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #EEE5D3;
+  color: white;
+}
+
+.shop {
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+}
+
+#image-14 {
+  padding-top: 75px;
+}
+
+#image-17 {
+  padding-top: 75px;
+}
+
+#image-18 {
+  padding-top: 0px;
+}
+
+#image-19 {
+  padding-top: 75px;
+}
+
+#image-12 {
+  padding-bottom: 0px;
+}
+</style>
+
+<div class="row">
+  <div class="column">
+    <img src="https://i1.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download.jpg?ssl=1" id="image-1" style="width:100%" class="shop">
+    <img src="https://i1.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download-1.jpg?ssl=1" id="image-4" style="width:100%; padding-bottom: 10px;" class="shop">
+    <img src="https://i1.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download-1-1.jpg?ssl=1" id="image-7" style="width:100%; padding-bottom: 10px;" class="shop">
+    <img src="https://i2.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download-1-1.png?ssl=1" id="image-10" style="width:100%; margin-top: 20px;" class="shop">
+    <img src="https://i0.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download-4.png?ssl=1" id="image-13" style="width:100%" class="shop">
+    <img src="https://i0.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download-1-2.png?ssl=1" id="image-16" style="width:100%" class="shop">
+    <img src="https://i2.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download-3-2.png?ssl=1" id="image-19" style="width:100%" class="shop">
+    <img src="https://i2.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download-7.png?ssl=1" id="image-22" style="width:100%" class="shop">
+  </div>
+  <div class="column">
+    <img src="https://i2.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download.png?ssl=1" id="image-2" style="width:100%; padding-top: 50px;" class="shop">
+    <img src="https://greenconsumerproject.org/wp-content/uploads/2020/07/download-2.png" id="image-5" style="width:100%" class="shop">
+     <img src="https://i1.wp.com/greenconsumerproject.org/wp-content/uploads/2020/10/Screen-Shot-2020-10-14-at-6.18.16-PM.png?ssl=1" id="image-8" style="width:100%; padding-top: 10px;" class="shop">
+    <img src="https://i2.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download-2-1.png?ssl=1" id="image-11" style="width:100%; padding-top: 50px;" class="shop">
+    <img src="https://i0.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/Screen-Shot-2020-07-27-at-5.24.33-PM.png?ssl=1" id="image-14" style="width:100%" class="shop">
+    <img src="https://i1.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/BULogo_GRAY.png?ssl=1" id="image-17" style="width:100%" class="shop">
+    <img src="https://i2.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download-2-2.png?ssl=1" id="image-20" style="width:100%" class="shop">
+  </div>
+  <div class="column">
+    <img src="https://i1.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download-1.png?ssl=1" id="image-3" style="width:100%" class="shop">
+    <img src="https://i0.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download-2.jpg?ssl=1" id="image-6" style="width:100%" class="shop">
+    <img src="https://i2.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download-3.png?ssl=1" id="image-9" style="width:100%; padding-bottom: 20px;" class="shop">
+    <img src="https://p.kindpng.com/picc/s/717-7178515_save-the-duck-responsibility-for-the-energy-you.png" id="image-12" style="width:100%; padding-bottom: 0px;" class="shop">
+    <img src="https://i1.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download-6.png?ssl=1" id="image-15" style="width:100%; padding-bottom: 0px; padding-top: 0px; margin-bottom: 0px;" class="shop">
+    <img src="https://i2.wp.com/greenconsumerproject.org/wp-content/uploads/2020/10/Screen-Shot-2020-10-16-at-3.24.11-PM.png?ssl=1" id="image-18" style="width:100%; transform: scale(0.7); padding-top: 0px; position: relative; top: -25px;" class="shop">
+    <img src="https://i2.wp.com/greenconsumerproject.org/wp-content/uploads/2020/07/download-3.jpg?ssl=1" id="image-21" style="width:100%;" class="shop">
+  </div>
+</div>
+
+
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Earth Hero</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://earthhero.com/?_vsrefdom=adwords&amp;gclid=EAIaIQobChMIkP6UrtDw6gIVkZOzCh2ssA3qEAAYASAAEgLpJ_D_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Sustainable Business, GCP Environmentally-Friendly Business, Vegan</p>
+      <p>Price: $</p>
+      <p>Earth Hero is an online marketplace, similar to Amazon and Ebay. However, unlike many eCommerce sites, All of the products on their marketplace from sustainable companies.</p>
+      <p>Coupon: earthhero15 – 15% off</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Recover</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://recoverbrands.com/"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Environmentally-Friendly Business</p>
+      <p>Price: $</p>
+      <p>Recover up-cycles plastic water bottles into clothing for men, women, and children.</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal3" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Save Lands</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://savelands.org/?gclid=EAIaIQobChMI1tDox9Dw6gIVEpSzCh3tAAQ3EAAYASAAEgJu9vD_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Environmentally-Friendly Business</p>
+      <p>Price: $</p>
+      <p>Save Lands pledges to plant twelve trees for every item bought. They sell comfortable and fun graphic t-shirts as well as hoodies and fleeces.</p>
+      <p>Coupons: family / trees / change – 20% off</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal4" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>&amp;collar</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://andcollar.com/?gclid=EAIaIQobChMI0NuQ0tDw6gIVgYrICh1U4wg2EAAYASAAEgJY2PD_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Environmentally-Friendly Business</p>
+      <p>Price: $</p>
+      <p>Turns plastic bottles into comfortable and fashionable dress shirts. One shirt can be produced with 15 plastic bottles.</p>
+      <p>Coupon: socks – free shipping</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal5" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>United By Blue</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://unitedbyblue.com/?gclid=EAIaIQobChMIy_eEl9Hw6gIVDo7ICh3QxAWvEAAYASAAEgJYVfD_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Environmentally-Friendly Business</p>
+      <p>Price: $$</p>
+      <p>United by Blue removes one pound of trash from oceans and waterways for every product purchased.</p>
+      <p>Coupon: seeyasummer – 50% off</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal6" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Tentree</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://www.tentree.com/?gclid=EAIaIQobChMIw6DWqtHw6gIVkeDICh0GfQ4wEAAYASAAEgIrVfD_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Sustainable Brand, GCP Environmentally-Friendly Business, Vegan</p>
+      <p>Price: $$</p>
+      <p>Tentree sells women and men apparel and for every item that is bought they plant ten trees with a goal to plant 1 billion trees by 2030.</p>
+      <p>Coupons: plant10 / planters10 / t7hxp4 / mangrove10 – 10% off</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal7" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Coalatree</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://coalatree.com/?device=c&amp;keyword=coalatree&amp;matchtype=e&amp;utm_source=adwords&amp;utm_medium=cpc&amp;gclid=EAIaIQobChMIjM7JuNHw6gIVhp6zCh0ANQB8EAAYASAAEgI1wvD_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Environmentally-Friendly Business</p>
+      <p>Price: $$</p>
+      <p>Coalatree sells “eco-minded” gear and clothing that promote the “Mountain to City” lifestyle and participate in giveback programs that help maintain watersheds and other outdoor areas.</p>
+      <p>Coupons: bouceback / ctfriends – 15%; onelove / get10 – 10% off</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal8" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Pangaia</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://coalatree.com/?device=c&amp;keyword=coalatree&amp;matchtype=e&amp;utm_source=adwords&amp;utm_medium=cpc&amp;gclid=EAIaIQobChMIjM7JuNHw6gIVhp6zCh0ANQB8EAAYASAAEgI1wvD_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Environmentally-Friendly Business, Vegan</p>
+      <p>Price: $$</p>
+      <p>Pangaia designs products for living in, for any situation and for basic needs with smart technology and as many sustainable &amp; recyclable elements as possible.</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal9" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Arvin Goods</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://www.arvingoods.com/?gclid=EAIaIQobChMIh9OuzdHw6gIVmZOzCh3gsAgJEAAYASAAEgLkw_D_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Environmentally-Friendly Business, Vegan</p>
+      <p>Price: $$</p>
+      <p>Arvin Goods believe that responsibly made products can help global communities combat the lack of drinking water by removing it from their manufacturing process.</p>
+      <p>Coupons: thanksarvin / newfriend15 – 15% off</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal10" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Toad and Co.</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://www.toadandco.com/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Search:_Brand_-_Trademark&amp;utm_adgroup=Toad&amp;Co&amp;gclid=EAIaIQobChMIrb7l19Hw6gIVweDICh16_wiLEAAYASAAEgJeuPD_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Environmentally-Friendly Business</p>
+      <p>Price: $$</p>
+      <p>Toad and Co. makes comfortable, stylish clothing for the Milennial/Gen X market using sustainable materials and have pledged several eco-friendly goals by 2025.</p>
+      <p>Coupon: balanced – free shipping</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal11" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Patagonia</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://www.patagonia.com/shop/clothing-gear/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Brand%20Core&amp;gclid=EAIaIQobChMI6JG54tHw6gIVUcDICh02OQckEAAYASAAEgIS2_D_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Environmentally-Friendly Business, Vegan</p>
+      <p>Price: $$$</p>
+      <p>Patagonia sells outdoor gear and clothing with a goal to be carbon neutral by 2025.</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal12" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Save the Duck</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://savetheduckusa.com/?gclid=EAIaIQobChMImsy58NHw6gIVFo3ICh2RfQLyEAAYASAAEgIXwfD_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Environmentally-Friendly Business, Vegan</p>
+      <p>Price: $$$</p>
+      <p>Save the Duck makes high end jackets made out of a unique sustainable and waterproof material while actively contributes to a myriad of climate and animal charities to help make the world a better place.</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal13" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Stella McCartney</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://www.stellamccartney.com/us?gclid=EAIaIQobChMIuY3IkdLw6gIVD4TICh0SpwVTEAAYASAAEgI5tvD_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Environmentally-Friendly Business, Vegan</p>
+      <p>Price: $$$$$</p>
+      <p>Stella McCartney uses sustainable and recycled materials to make women’s clothing and accessories that are modern and stylish.</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal14" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Chnge</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://chnge.com/"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: No Info</p>
+      <p>Price: $</p>
+      <p>Chnge clothing makes shirts that advocate for social justice.</p>
+      <p>Coupon: Welcome42918- 20% off first order $75+</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal15" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Idioma</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://www.idioma.world/"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: No Info</p>
+      <p>Price: $</p>
+      <p> Idioma is an international brand that sells high quality clothing and accessories with minimalist patterns. They advocate for cultural awareness and unity.</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal16" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Marine Layer</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://www.marinelayer.com/"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: No Info</p>
+      <p>Price: $$</p>
+      <p> Marine layer uses low-impact materials to make their responsibly-made clothing.</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal17" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Brandwear United</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://www.brandwearunited.com/"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: No Info</p>
+      <p>Price: $</p>
+      <p>Brandwear united combines many known brands and makes 80% of the apparel from plants owned by them.</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal18" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>American Collegiate</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://american-collegiate.com/"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Environmentally-Friendly Business, Vegan</p>
+      <p>Price: $</p>
+      <p>Ethically made college wear that donates 10% of sales to purchase supplies for frontline workers.</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal19" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Obey Clothing</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://obeyclothing.com/?gclid=EAIaIQobChMIn-zt5NLw6gIVFrbICh1cjwQlEAAYASAAEgJ2nfD_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: No Info</p>
+      <p>Price: $$</p>
+      <p>Obey clothing has an ongoing commitment to use environmentally friendly and sustainable materials in the clothing made.</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal20" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Outerknown</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://www.outerknown.com/?utm_source=google&amp;utm_medium=cpc&amp;utm_source=google&amp;utm_medium=cpc&amp;gclid=EAIaIQobChMIoaj37tLw6gIVZOW1Ch3yRQC9EAAYASAAEgLHnfD_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: No Info</p>
+      <p>Price: $$</p>
+      <p>Outerknown sells beachwear made with eco-friendly materials.</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal21" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Farago the Label</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://www.outerknown.com/?utm_source=google&amp;utm_medium=cpc&amp;utm_source=google&amp;utm_medium=cpc&amp;gclid=EAIaIQobChMIoaj37tLw6gIVZOW1Ch3yRQC9EAAYASAAEgLHnfD_BwE"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Sustainable Brand, GCP Environmentally-Friendly Business, Vegan</p>
+      <p>Price: $$</p>
+      <p>Farago the Label sells swimwear is made with a specially designed top quality biodegradable fabric, imported from Italy. Each piece is handmade by a vegan, peta-approved, Brazilian swimwear manufacturer. Beautiful swimwear mainly for women.</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal22" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>MeUndies</h2>
+    </div>
+    <div class="modal-body">
+      <a href="https://www.meundies.com/"><p>Click <em><u>HERE</u></em> to go to their website</p></a>
+      <p>Class: GCP Sustainable Brand, GCP Environmentally-Friendly Business, Vegan</p>
+      <p>Price: $</p>
+      <p>MeUndies sells underwear that are knit from Lenzing Modal®, a naturally soft, breathable, eco-friendly fabric extruded from Austrian beech trees. The cellulosic properties of Lenzing Modal® fiber naturally inhibit odor-causing bacterial growth, while the smooth and supple wood fiber gives their fabric a luxuriously soft, cool, and cozy feel. They include a variety of underwear for men and women!</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2");
+var modal3 = document.getElementById("myModal3");
+var modal4 = document.getElementById("myModal4");
+var modal5 = document.getElementById("myModal5");
+var modal6 = document.getElementById("myModal6");
+var modal7 = document.getElementById("myModal7");
+var modal8 = document.getElementById("myModal8");
+var modal9 = document.getElementById("myModal9");
+var modal10 = document.getElementById("myModal10");
+var modal11 = document.getElementById("myModal11");
+var modal12 = document.getElementById("myModal12");
+var modal13 = document.getElementById("myModal13");
+var modal14 = document.getElementById("myModal14");
+var modal15 = document.getElementById("myModal15");
+var modal16 = document.getElementById("myModal16");
+var modal17 = document.getElementById("myModal17");
+var modal18 = document.getElementById("myModal18");
+var modal19 = document.getElementById("myModal19");
+var modal20 = document.getElementById("myModal20");
+var modal21 = document.getElementById("myModal21");
+var modal22 = document.getElementById("myModal22");
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("image-1");
+var btn2 = document.getElementById("image-2");
+var btn3 = document.getElementById("image-3");
+var btn4 = document.getElementById("image-4");
+var btn5 = document.getElementById("image-5");
+var btn6 = document.getElementById("image-6");
+var btn7 = document.getElementById("image-7");
+var btn8 = document.getElementById("image-8");
+var btn9 = document.getElementById("image-9");
+var btn10 = document.getElementById("image-10");
+var btn11 = document.getElementById("image-11");
+var btn12 = document.getElementById("image-12");
+var btn13 = document.getElementById("image-13");
+var btn14 = document.getElementById("image-14");
+var btn15 = document.getElementById("image-15");
+var btn16 = document.getElementById("image-16");
+var btn17 = document.getElementById("image-17");
+var btn18 = document.getElementById("image-18");
+var btn19 = document.getElementById("image-19");
+var btn20 = document.getElementById("image-20");
+var btn21 = document.getElementById("image-21");
+var btn22 = document.getElementById("image-22");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+btn3.onclick = function() {
+  modal3.style.display = "block";
+}
+
+btn4.onclick = function() {
+  modal4.style.display = "block";
+}
+
+btn5.onclick = function() {
+  modal5.style.display = "block";
+}
+
+btn6.onclick = function() {
+  modal6.style.display = "block";
+}
+
+btn7.onclick = function() {
+  modal7.style.display = "block";
+}
+
+btn8.onclick = function() {
+  modal8.style.display = "block";
+}
+
+btn9.onclick = function() {
+  modal9.style.display = "block";
+}
+
+btn10.onclick = function() {
+  modal10.style.display = "block";
+}
+
+btn11.onclick = function() {
+  modal11.style.display = "block";
+}
+
+btn12.onclick = function() {
+  modal12.style.display = "block";
+}
+
+btn13.onclick = function() {
+  modal13.style.display = "block";
+}
+
+btn14.onclick = function() {
+  modal14.style.display = "block";
+}
+
+btn15.onclick = function() {
+  modal15.style.display = "block";
+}
+
+btn15.onclick = function() {
+  modal15.style.display = "block";
+}
+
+btn16.onclick = function() {
+  modal16.style.display = "block";
+}
+
+btn17.onclick = function() {
+  modal17.style.display = "block";
+}
+
+btn18.onclick = function() {
+  modal18.style.display = "block";
+}
+
+btn19.onclick = function() {
+  modal19.style.display = "block";
+}
+
+btn20.onclick = function() {
+  modal20.style.display = "block";
+}
+
+btn21.onclick = function() {
+  modal21.style.display = "block";
+}
+
+btn22.onclick = function() {
+  modal22.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    console.log("This is the modal clicking");
+  } else if (event.target == modal2) {
+    modal2.style.display = "none";
+  } else if (event.target == modal3) {
+    modal3.style.display = "none";
+  } else if (event.target == modal4) {
+    modal4.style.display = "none";
+  } else if (event.target == modal5) {
+    modal5.style.display = "none";
+  } else if (event.target == modal6) {
+    modal6.style.display = "none";
+  } else if (event.target == modal7) {
+    modal7.style.display = "none";
+  } else if (event.target == modal8) {
+    modal8.style.display = "none";
+  } else if (event.target == modal9) {
+    modal9.style.display = "none";
+  } else if (event.target == modal10) {
+    modal10.style.display = "none";
+  } else if (event.target == modal11) {
+    modal11.style.display = "none";
+  } else if (event.target == modal12) {
+    modal12.style.display = "none";
+  } else if (event.target == modal13) {
+    modal13.style.display = "none";
+  } else if (event.target == modal14) {
+    modal14.style.display = "none";
+  } else if (event.target == modal15) {
+    modal15.style.display = "none";
+  } else if (event.target == modal16) {
+    modal16.style.display = "none";
+  } else if (event.target == modal17) {
+    modal17.style.display = "none";
+  } else if (event.target == modal18) {
+    modal18.style.display = "none";
+  } else if (event.target == modal19) {
+    modal19.style.display = "none";
+  } else if (event.target == modal20) {
+    modal20.style.display = "none";
+  } else if (event.target == modal21) {
+    modal21.style.display = "none";
+  } else if (event.target == modal22) {
+    modal22.style.display = "none";
+  }
+}
+
+</script>
